@@ -1,0 +1,10 @@
+{
+  "name": "linktree-vue-clone",
+  "account_id": "749fb76463b2592d5e50d6d3888202ec",
+  "compatibility_date": "2026-02-17",
+  "site": {
+    "bucket": "./dist",
+    "entry-point": "workers-site"
+  },
+  "pages_build_output_dir": "./dist"
+}
