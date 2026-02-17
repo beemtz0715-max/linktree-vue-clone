@@ -36,11 +36,11 @@ const icons = {
     :href="url"
     target="_blank"
     rel="noopener noreferrer"
-    class="group relative flex w-full items-center gap-4 rounded-xl border border-gray-700 bg-gray-800 p-4 shadow-md shadow-gray-900/50 transition-all duration-300 hover:scale-[1.02] hover:border-green-600 hover:shadow-xl hover:shadow-green-500/20"
+    class="group relative flex w-full items-center gap-4 rounded-xl border border-gray-700 bg-gray-800 p-4 shadow-md shadow-gray-900/50 transition-all duration-300 hover:scale-[1.02] hover:border-pink-600 hover:shadow-xl hover:shadow-pink-500/20"
   >
     <!-- Icon Container -->
     <div
-      class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-gray-700 text-green-400 transition-all duration-300 group-hover:scale-110 group-hover:bg-green-500 group-hover:text-white group-hover:shadow-xl group-hover:shadow-green-500/20"
+      class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-gray-700 text-pink-400 transition-all duration-300 group-hover:scale-110 group-hover:bg-pink-500 group-hover:text-white group-hover:shadow-xl group-hover:shadow-pink-500/20"
     >
       <svg
         viewBox="0 0 24 24"
@@ -54,14 +54,12 @@ const icons = {
     <!-- Text Content -->
     <div class="min-w-0 flex-1">
       <h3 class="truncate font-display font-semibold text-white">{{ title }}</h3>
-      <p class="truncate text-sm text-gray-400">
-        {{ description }}
-      </p>
+      <p class="truncate text-sm text-gray-400">{{ description }}</p>
     </div>
 
     <!-- Hover Glow Effect -->
     <div
-      class="absolute inset-0 rounded-xl bg-linear-to-r from-green-500/0 via-green-500/10 to-green-500/0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+      class="absolute inset-0 rounded-xl bg-linear-to-r from-pink-500/0 via-pink-500/10 to-pink-500/0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
     />
   </a>
 </template>
