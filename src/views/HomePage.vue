@@ -27,7 +27,7 @@ const profile = ref({
       id: 1,
       title: 'Expense Splitter (Live)',
       url: 'https://expenses-html-458.pages.dev/',
-      icon: 'code',
+      icon: 'flag',
       description: 'A Vue.js app to split expenses among friends',
     },
     {

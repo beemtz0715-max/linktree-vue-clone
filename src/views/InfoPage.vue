@@ -16,21 +16,22 @@ const bio = ref({
 
 <template>
   <main class="flex min-h-screen flex-col items-center px-4 py-8 sm:py-12">
+    <!-- Back Link -->
     <RouterLink
       to="/"
-      class="my-8 self-start text-sm text-gray-400 underline-offset-4 transition-colors duration-200 hover:text-green-400 hover:underline"
+      class="my-8 self-start text-sm text-pink-600 underline-offset-4 transition-colors duration-200 hover:text-pink-800 hover:underline"
     >
       ← Back to Links
     </RouterLink>
 
     <!-- Profile Card -->
     <div
-      class="w-full max-w-lg rounded-2xl border border-gray-700 bg-gray-800 p-6 shadow-xl shadow-gray-900/50 sm:p-8"
+      class="w-full max-w-lg rounded-2xl border border-pink-400 bg-gray-800 p-6 shadow-xl shadow-pink-500/50 sm:p-8"
     >
       <!-- Header -->
       <div class="mb-6 flex flex-col items-center text-center sm:flex-row sm:text-left">
         <div
-          class="mb-4 h-20 w-20 shrink-0 overflow-hidden rounded-full border-4 border-green-400 sm:mr-6 sm:mb-0"
+          class="mb-4 h-20 w-20 shrink-0 overflow-hidden rounded-full border-4 border-pink-400 sm:mr-6 sm:mb-0"
         >
           <img
             :src="bio.avatar"
@@ -39,25 +40,25 @@ const bio = ref({
           />
         </div>
         <div>
-          <h1 class="mb-1 font-display text-2xl font-bold text-white">{{ bio.name }}</h1>
-          <p class="text-sm text-gray-400">📍 {{ bio.location }}</p>
+          <h1 class="mb-1 font-display text-2xl font-bold text-pink-800">{{ bio.name }}</h1>
+          <p class="text-sm text-pink-600">📍 {{ bio.location }}</p>
         </div>
       </div>
 
       <!-- About Section -->
       <div class="mb-6">
-        <h2 class="mb-3 text-lg font-semibold text-white">About</h2>
-        <p class="leading-relaxed text-gray-300">{{ bio.about }}</p>
+        <h2 class="mb-3 text-lg font-semibold text-pink-800">About</h2>
+        <p class="leading-relaxed text-pink-300">{{ bio.about }}</p>
       </div>
 
       <!-- Skills Section -->
       <div class="mb-6">
-        <h2 class="mb-3 text-lg font-semibold text-white">Skills</h2>
+        <h2 class="mb-3 text-lg font-semibold text-pink-800">Skills</h2>
         <div class="flex flex-wrap gap-2">
           <span
             v-for="skill in bio.skills"
             :key="skill"
-            class="rounded-full bg-green-900/50 px-3 py-1 text-sm text-green-300"
+            class="rounded-full bg-pink-900/50 px-3 py-1 text-sm text-pink-300"
           >
             {{ skill }}
           </span>
@@ -66,10 +67,10 @@ const bio = ref({
 
       <!-- Contact -->
       <div>
-        <h2 class="mb-3 text-lg font-semibold text-white">Get in Touch</h2>
+        <h2 class="mb-3 text-lg font-semibold text-pink-800">Get in Touch</h2>
         <a
           :href="`mailto:${bio.email}`"
-          class="group inline-flex items-center gap-2 rounded-xl bg-green-500 px-6 py-3 font-medium text-white shadow-lg shadow-green-500/30 transition-all duration-200 hover:scale-105 hover:bg-green-600 hover:shadow-xl hover:shadow-green-500/40 active:scale-95"
+          class="group inline-flex items-center gap-2 rounded-xl bg-pink-500 px-6 py-3 font-medium text-white shadow-lg shadow-pink-500/30 transition-all duration-200 hover:scale-105 hover:bg-pink-600 hover:shadow-xl hover:shadow-pink-500/40 active:scale-95"
         >
           <svg
             data-slot="icon"
