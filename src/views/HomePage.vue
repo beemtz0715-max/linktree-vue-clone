@@ -12,15 +12,15 @@ const profile = ref({
       title: 'GitHub',
       url: 'https://github.com/beemtz0715-max',
       icon: 'code',
-      description: 'Check out my projects',
+      description: 'Check out my projects'
     },
     {
       id: 2,
       title: 'LinkedIn',
       url: 'https://www.linkedin.com/in/biancamartinez0715/',
       icon: 'briefcase',
-      description: 'Connect with me professionally',
-    },
+      description: 'Connect with me professionally'
+    }
   ],
   projects: [
     {
@@ -28,16 +28,30 @@ const profile = ref({
       title: 'Expense Splitter (Live)',
       url: 'https://expenses-html-458.pages.dev/',
       icon: 'flag',
-      description: 'A Vue.js app to split expenses among friends',
+      description: 'A Vue.js app to split expenses among friends'
     },
     {
       id: 2,
       title: 'Expense Splitter (GitHub)',
       url: 'https://github.com/beemtz0715-max/01-ExpensesSplitter',
       icon: 'code',
-      description: 'Source code for Expense Splitter Vue app',
+      description: 'Source code for Expense Splitter Vue app'
     },
-  ],
+    {
+      id: 3,
+      title: 'Anime Roulette (Live)',
+      url: 'https://anime-roulette-watchlist.anime-roulette-machine.workers.dev/',
+      icon: 'sparkles',
+      description: 'Spin to discover anime and build your watchlist'
+    },
+    {
+      id: 4,
+      title: 'Anime Roulette (GitHub)',
+      url: 'https://github.com/beemtz0715-max/anime-roulette-watchlist-bee',
+      icon: 'code',
+      description: 'Source code for Anime Roulette Vue app'
+    }
+  ]
 })
 </script>
 
@@ -72,7 +86,7 @@ const profile = ref({
       />
     </div>
 
-    <!-- Projects Section (Expense Splitter) -->
+    <!-- Projects Section -->
     <div class="mt-12 w-full max-w-md">
       <h2 class="mb-4 text-xl font-bold text-pink-800">Projects</h2>
       <div class="flex flex-col gap-4">
